@@ -3,12 +3,40 @@
     justify-content: space-between;
     align-items: center;
 
+    @media #{$tablet} {
+        padding: 0 10px;
+    }
+
+    @media #{$mobile} {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+
+
+
     &__logo {
-        width: 250px;
+        max-width: 250px;
 
         img {
             width: 100%;
         }
+
+        @media #{$tablet} {
+            max-width: 170px;
+        }
+
+        @media #{$mobile} {
+
+            display: block;
+            max-width: 150px;
+            margin-top: 10px;
+            img {
+                // width: 60%;
+                margin: auto 0;
+            }
+        }
+
     }
 
     &__official {
@@ -20,6 +48,14 @@
         span {
             display: block;
             font-size: 18px;
+        }
+
+        @media #{$tablet} {
+            font-size: 10px;
+
+            span {
+                font-size: 15px;
+            }
         }
     }
 
@@ -36,10 +72,24 @@
         &:hover {
             color: #fff;
         }
+
+        @media #{$tablet} {
+            font-size: 15px;
+        }
+        @media #{$mobile} {
+            text-align: center;
+        }
     }
-    &__contacts{
+
+    &__contacts {
         display: flex;
         flex-direction: column;
-        align-items:flex-end;
+        align-items: flex-end;
+        @media #{$tablet} {
+            
+        }
+        @media #{$mobile} {
+            align-items:center;
+        }
     }
 }

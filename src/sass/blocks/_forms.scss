@@ -17,4 +17,21 @@
       margin-bottom: 30px;
     }
   }
+  &_mt-25 {
+    margin-top: 25px;
+    @media #{$tablet} {
+    width: 100%;
+  }
+  
+  &_left {
+    @media #{$tablet} {
+      width: calc(100% - 30%);
+      margin: 36px 15% 0 15%;
+    }
+    @media #{$mobile}{
+      width: calc(100% - 40px);
+      margin: 36px 20px 0 20px;
+    }
+  }    
+}
 }
